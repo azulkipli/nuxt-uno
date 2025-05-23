@@ -19,15 +19,7 @@ useHead({
 });
 
 const route = useRoute();
-const routeName = route?.name;
-console.log("routeName", routeName)
-const firstChar = routeName ? String(routeName).charAt(0).toUpperCase() : "";
-console.log("firstChar", firstChar)
-const titleRoute = routeName
-  ? String(routeName).slice(1).replace(/-/g, " ")
-  : "";
-
-const titleMeta = `${firstChar}${titleRoute}`;
+const titleMeta = String(route?.meta?.title) || ""
 
 useSeoMeta({
   title: titleMeta,

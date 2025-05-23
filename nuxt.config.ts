@@ -19,20 +19,20 @@ export default defineNuxtConfig({
     prerender: {
       autoSubfolderIndex: false,
     },
-    esbuild: {
-      options: {
-        drop:
-          process.env.NODE_ENV === "production" &&
-          process.env.APP_DEBUG === "on"
-            ? []
-            : ["console"],
-      },
-    },
+    // esbuild: {
+    //   options: {
+    //     drop:
+    //       process.env.NODE_ENV === "production" &&
+    //       process.env.APP_DEBUG === "on"
+    //         ? []
+    //         : ["console"],
+    //   },
+    // },
   },
   vite: {
-    esbuild: {
-      drop: process.env.APP_DEBUG === "on" ? [] : ["debugger", "console"],
-    },
+    // esbuild: {
+    //   drop: process.env.APP_DEBUG === "on" ? [] : ["debugger", "console"],
+    // },
     define: {
       __VUE_PROD_DEVTOOLS__: process.env.APP_DEBUG === "on",
     },
