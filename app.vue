@@ -48,5 +48,13 @@ useSeoMeta({
 <style>
 h1 {
   font-size: 2rem;
+  line-height: 2.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+h1 span.iconify {
+  margin-right: 0.25rem;
 }
 </style>
