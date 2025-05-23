@@ -9,16 +9,33 @@ export default defineNuxtConfig({
       scrollBehaviorType: "smooth",
     },
   },
-  experimental: {
-    payloadExtraction: true,
-  },
   features:{
     inlineStyles: true
   },
   nitro: {
     routeRules: {
-      '/**': { prerender: true }
-    }
+      '/': { prerender: true }
+    },
+    prerender: {
+      autoSubfolderIndex: false,
+    },
+    esbuild: {
+      options: {
+        drop:
+          process.env.NODE_ENV === "production" &&
+          process.env.APP_DEBUG === "on"
+            ? []
+            : ["console"],
+      },
+    },
+  },
+  vite: {
+    esbuild: {
+      drop: process.env.APP_DEBUG === "on" ? [] : ["debugger", "console"],
+    },
+    define: {
+      __VUE_PROD_DEVTOOLS__: process.env.APP_DEBUG === "on",
+    },
   },
   hooks: {
     'build:manifest': (manifest) => {

@@ -1,0 +1,13 @@
+services:
+  web:
+    container_name: "nuxt-uno"
+    labels:
+      - dev.orbstack.domains=nuxt-uno.local
+    build:
+      context: .
+      dockerfile: ./Dockerfile.bun
+    environment:
+      APP_DEBUG: ${APP_DEBUG}
+    ports:
+      - "8080:3000"
+    restart: always
