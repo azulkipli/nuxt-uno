@@ -44,3 +44,9 @@ useSeoMeta({
     <NuxtPage />
   </NuxtLayout>
 </template>
+
+<style>
+h1 {
+  font-size: 2rem;
+}
+</style>
