@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/eslint", "@nuxt/icon"],
   router: {
     options: {
       linkActiveClass: "active",
@@ -13,6 +12,7 @@ export default defineNuxtConfig({
     inlineStyles: true
   },
   nitro: {
+    compressPublicAssets: true,
     routeRules: {
       '/': { prerender: true }
     },
