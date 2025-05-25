@@ -38,7 +38,7 @@ useSeoMeta({
  }
  a{
   @apply no-underline hover:underline;
-  @apply text-blue-7;
+  @apply text-blue-8 font-400;
  }
  a.active{
   @apply text-blue-5;
