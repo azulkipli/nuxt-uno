@@ -10,12 +10,6 @@ useHead({
   titleTemplate: (param) => {
     return param ? `${param} - AZ` : "";
   },
-  // link: [
-  //   { rel: "preconnect", href: "https://connect.facebook.net" },
-  //   { rel: "dns-prefetch", href: "https://connect.facebook.net" },
-  //   { rel: "preconnect", href: "https://www.facebook.com" },
-  //   { rel: "dns-prefetch", href: "https://www.facebook.com" },
-  // ],
 });
 
 const route = useRoute();

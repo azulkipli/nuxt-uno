@@ -12,18 +12,6 @@ import {
 
 export default defineConfig({
   // ...UnoCSS options
-  // content: {
-  //   pipeline: {
-  //     include: [
-  //       // the default
-  //       /\.(vue|svelte|[jt]sx|mdx?|astro|html)($|\?)/,
-  //       // include js/ts files
-  //       './**/*.{vue,js,ts,jsx,tsx}',
-  //     ],
-  //     // exclude files
-  //     // exclude: []
-  //   },
-  // },
   presets: [
     presetWind3(),
     presetAttributify(),
