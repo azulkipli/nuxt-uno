@@ -37,10 +37,10 @@ useSeoMeta({
   @apply flex flex-row items-center;
  }
  a{
-  @apply no-underline hover:underline;
-  @apply text-blue-8 font-400;
+  @apply no-underline hover:opacity-60;
+  @apply text-blue-9 font-400;
  }
  a.active{
-  @apply text-blue-5;
+  @apply underline;
  }
 </style>
