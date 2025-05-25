@@ -2,6 +2,8 @@
   "name": "nuxt-uno",
   "private": true,
   "type": "module",
+  "version": "0.0.1",
+  "description": "NuxtJS UnoCSS starter template",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --port 3737",
