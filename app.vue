@@ -38,15 +38,15 @@ useSeoMeta({
 </template>
 
 <style>
-h1 {
-  font-size: 2rem;
-  line-height: 2.2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: left;
-}
-h1 span.iconify {
-  margin-right: 0.25rem;
-}
+ h1.page-title {
+  @apply text-3xl text-left;
+  @apply flex flex-row items-center;
+ }
+ a{
+  @apply no-underline hover:underline;
+  @apply text-blue-7;
+ }
+ a.active{
+  @apply text-blue-5;
+ }
 </style>
