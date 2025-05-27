@@ -13,12 +13,17 @@
   },
   "dependencies": {
     "@ameinhardt/unocss-preset-daisy": "^1.1.7",
+    "@una-ui/extractor-vue-script": "^0.56.4",
+    "@una-ui/nuxt": "^0.56.4",
+    "@una-ui/preset": "^0.56.4",
     "daisyui": "^5.0.37",
     "nuxt": "^3.17.4",
     "vue": "^3.5.14",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@iconify-json/lucide": "^1.2.44",
+    "@iconify-json/tabler": "^1.2.18",
     "@nuxt/eslint": "^1.4.1",
     "@unocss/nuxt": "^66.1.2",
     "@unocss/preset-wind4": "^66.1.2",

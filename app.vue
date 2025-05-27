@@ -13,7 +13,7 @@ useHead({
 });
 
 const route = useRoute();
-const titleMeta = String(route?.meta?.title) || ""
+const titleMeta = String(route?.meta?.title) || "";
 
 useSeoMeta({
   title: titleMeta,
@@ -32,15 +32,8 @@ useSeoMeta({
 </template>
 
 <style>
- h1.page-title {
+h1.page-title {
   @apply text-3xl text-left;
   @apply flex flex-row items-center;
- }
- a{
-  @apply no-underline hover:opacity-60;
-  @apply text-blue-9 font-400;
- }
- a.active{
-  @apply underline;
- }
+}
 </style>

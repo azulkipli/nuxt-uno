@@ -48,7 +48,7 @@ export default defineNuxtConfig({
   },
 
   // enabled modules
-  modules: ["@nuxt/eslint", "@unocss/nuxt"],
+  modules: ["@nuxt/eslint", "@unocss/nuxt", "@una-ui/nuxt"],
 
   // uncoCSS config
   unocss: {
